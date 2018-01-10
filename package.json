@@ -1,0 +1,14 @@
+{
+  "name": "bash-crypto-price",
+  "version": "1.0.0",
+  "description": "retrieve and return the current price of your favorite crypto-currencies from coinbase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests...\" && exit 1"
+  },
+  "author": "ben krig",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
