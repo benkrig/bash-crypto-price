@@ -5,14 +5,17 @@ setup:
 2. $cd repo; $npm install;
 3. add line to terminal startup: node bash-crypto-price/index.js [args]
 
-return only the currencies you want:
+return only the currencies you want:\n
+```
 btc
 eth
 ltc
 bch
+```
 
-usage:
+usage:\n
+```
 $node index.js btc eth
 BTC-USD: $13795.95	ETH-USD: $1262.54
-
+```
 Enjoy!
