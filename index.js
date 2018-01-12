@@ -22,7 +22,7 @@ function allDone() {
 	return false;
 }
 
-function get(type) {
+function getPrices(type) {
 	request('https://api.coinbase.com/v2/prices/' + type + '/buy', function(error, response, body) {
 		var obj = JSON.parse(body);
 		price[type] =  obj.data.amount;
@@ -41,12 +41,7 @@ function cout () {
 	process.stdout.write('\n');
 }
 
+//start
 for ( var i = 0; i < commands.length; i ++ ) {
-	get(commands[i]);
+	getPrices(commands[i]);
 }
-
-
-
-
-
-
