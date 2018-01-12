@@ -2,7 +2,11 @@ A barebones app for your terminal to display the latest crypto prices using Coin
 
 setup:
 1. clone repo
-2. $cd repo; $npm install;
+2. 
+```
+$ cd bash-crypto-price
+$ npm install
+```
 3. add line to terminal startup: node bash-crypto-price/index.js [args]
 
 return only the currencies you want:\n
