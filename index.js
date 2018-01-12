@@ -1,6 +1,8 @@
 var request = require("request");
 
 const currencies = {'btc' : 'BTC-USD', 'eth' : 'ETH-USD', 'ltc' : 'LTC-USD', 'bch' : 'BCH-USD'};
+const colors = {'BTC-USD' : "\x1b[33m", 'ETH-USD' : "\x1b[32m", 'LTC-USD' : "\x1b[35m", 'BCH-USD' : "\x1b[36m"};
+
 var commands = [];
 var price = {};
 
@@ -38,8 +40,10 @@ for ( var i = 0; i < commands.length; i ++ ) {
 }
 
 function cout () {
-	var string = "\x1b[33mBTC: $" + price['BTC-USD'] + "\x1b[0m\t" + "\x1b[32mETH: $" + price['ETH-USD'] + "\x1b[0m\t" + "\x1b[35mLTC: $" + price['LTC-USD'] + "\x1b[0m\t" + "\x1b[36mBCH: $" + price['BCH-USD'] + "\x1b[0m";
-	console.log(string);
+	for(var currency in commands) {
+		process.stdout.write(colors[commands[currency]] + commands[currency] + ": $" + price[commands[currency]] + "\x1b[0m\t");
+	}
+	process.stdout.write('\n');
 }
 
 
