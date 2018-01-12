@@ -9,7 +9,7 @@ $ npm install
 ```
 3. add line to terminal startup: node bash-crypto-price/index.js [args]
 
-return only the currencies you want:\n
+return only the currencies you want:
 ```
 btc
 eth
