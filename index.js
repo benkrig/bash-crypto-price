@@ -34,11 +34,6 @@ function get(type) {
 	});
 }
 
-for ( var i = 0; i < commands.length; i ++ ) {
-
-	get(commands[i]);
-}
-
 function cout () {
 	for(var currency in commands) {
 		process.stdout.write(colors[commands[currency]] + commands[currency] + ": $" + price[commands[currency]] + "\x1b[0m\t");
@@ -46,6 +41,9 @@ function cout () {
 	process.stdout.write('\n');
 }
 
+for ( var i = 0; i < commands.length; i ++ ) {
+	get(commands[i]);
+}
 
 
 
