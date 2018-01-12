@@ -13,7 +13,7 @@ ltc
 bch
 ```
 
-usage:\n
+usage:
 ```
 $node index.js btc eth
 BTC-USD: $13795.95	ETH-USD: $1262.54
