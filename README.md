@@ -1,5 +1,7 @@
 A barebones app for your terminal to display the latest crypto prices using Coinbase APIs.
 
+![Screenshot](../master/img/screenshot.png)
+
 setup:
 1. clone repo
 2. 
